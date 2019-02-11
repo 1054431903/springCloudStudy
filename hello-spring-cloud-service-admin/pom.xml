@@ -10,10 +10,10 @@
         <relativePath>../hello-spring-cloud-dependencies/pom.xml</relativePath>
     </parent>
 
-    <artifactId>hello-spring-cloud-eureka</artifactId>
+    <artifactId>hello-spring-cloud-service-admin</artifactId>
     <packaging>jar</packaging>
 
-    <name>hello-spring-cloud-eureka</name>
+    <name>hello-spring-cloud-service-admin</name>
 
     <dependencies>
         <!-- Spring Boot Begin -->
@@ -38,8 +38,7 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
-                    <!--指明入口类-->
-                    <mainClass>com.jq.hello.spring.cloud.eureka.EurekaApplication</mainClass>
+                    <mainClass>com.jq.hello.spring.cloud.service.admin.ServiceAdminApplication</mainClass>
                 </configuration>
             </plugin>
         </plugins>

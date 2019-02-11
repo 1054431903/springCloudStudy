@@ -1,0 +1,17 @@
+package com.jq.hello.spring.cloud.service.admin;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+
+/**
+ * @Author: jq
+ * @Date: 2019/2/11 15:37
+ */
+@SpringBootApplication
+@EnableEurekaClient
+public class ServiceAdminApplication {
+    public static void main(String[] args) {
+        SpringApplication.run(ServiceAdminApplication.class, args);
+    }
+}
