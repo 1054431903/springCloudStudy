@@ -11,3 +11,5 @@ Spring Cloud 项目都是基于 Spring Boot 进行开发，并且都是使用 Ma
 
 在这一环节建了一个hello-spring-cloud-dependencies的文件夹来做其他子项目的依赖管理项目
 
+### 创建服务注册中心
+eureka服务注册中心的创建，具体pom，以及配置的编写
