@@ -1,22 +1,22 @@
-package com.jq.hello.spring.cloud.service.admin.controller;
+package com.jq.hello.spring.cloud.web.admin.feign.controller;
 
-import org.springframework.beans.factory.annotation.Value;
+import com.jq.hello.spring.cloud.web.admin.feign.service.AdminService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @Author: jq
- * @Date: 2019/2/11 15:49
+ * @Date: 2019/2/11 17:46
  */
 @RestController
 public class AdminController {
-
-    @Value("${server.port}")
-    private String port;
+    @Autowired
+    private AdminService adminService;
 
     @RequestMapping(value = "hi",method = RequestMethod.GET)
     public String sayHi() {
-        return String.format("hello spring cloud and port is : %s", port);
+        return adminService.sayHi();
     }
 }
