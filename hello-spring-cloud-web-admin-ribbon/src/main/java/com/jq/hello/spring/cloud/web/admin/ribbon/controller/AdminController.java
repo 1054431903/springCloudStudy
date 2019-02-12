@@ -16,7 +16,7 @@ public class AdminController {
     private AdminService adminService;
 
     @RequestMapping(value = "hi",method = RequestMethod.GET)
-    public String sayHi() {
-        return adminService.sayHi();
+    public String sayHi(String msg) {
+        return adminService.sayHi(msg);
     }
 }

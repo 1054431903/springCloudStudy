@@ -15,8 +15,12 @@ public class AdminController {
     @Value("${server.port}")
     private String port;
 
+//    @RequestMapping(value = "hi",method = RequestMethod.GET)
+//    public String sayHi() {
+//        return String.format("hello spring cloud and port is : %s", port);
+//    }
     @RequestMapping(value = "hi",method = RequestMethod.GET)
-    public String sayHi() {
-        return String.format("hello spring cloud and port is : %s", port);
+    public String sayHi(String msg) {
+        return String.format("hello spring cloud and port is : %s \n message : %s", port, msg);
     }
 }
