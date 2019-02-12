@@ -59,7 +59,7 @@ Netflix 开源了 Hystrix 组件，实现了熔断器模式，Spring Cloud 对�
 -- 在 Ribbon 调用方法上增加 `@HystrixCommand` 注解并指定 `fallbackMethod` 熔断方法 --
 参考ribbon的service
 
-### Feign 中使用熔断器
+###### Feign 中使用熔断器
 Feign 是自带熔断器的，但默认是关闭的。需要在配置文件中配置打开它，在配置文件增加以下代码：
 ```yml
 feign:
