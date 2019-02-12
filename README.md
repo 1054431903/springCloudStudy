@@ -66,5 +66,22 @@ feign:
   hystrix:
     enabled: true
 ```
-在 Service 中增加 fallback 指定类 (参考AdminService
+在 Service 中增加 fallback 指定类 (参考AdminService)
+
 创建熔断器类(AdminServiceHystrix)并实现对应的 Feign 接口
+### 使用熔断器仪表盘监控
+在 Ribbon 和 Feign 项目增加 Hystrix 仪表盘功能，两个项目的改造方式相同
+
+在 `pom.xml` 中增加依赖
+```xml
+<dependency>
+    <groupId>org.springframework.cloud</groupId>
+    <artifactId>spring-cloud-starter-netflix-hystrix-dashboard</artifactId>
+</dependency>
+```
+在 Application 中增加 `@EnableHystrixDashboard` 注解
+
+创建 `hystrix.stream` 的 Servlet 配置
+
+测试 Hystrix Dashboard(
+浏览器端访问 http://localhost:xxxx/hystrix)
