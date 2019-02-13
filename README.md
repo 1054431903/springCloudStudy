@@ -110,3 +110,5 @@ feign:
 学习中发现了一个新的注解`@SpringCloudApplication`它整合了SpringBoot,发现eureka客户端,断路器hystrix三个注解
 
 还有就是`@EnableDiscoveryClient`和`@EnableEurekaClient`现在直接使用前者就好了。两者前者功能更加的强大，需要了解详细的信息可以去搜索两者的区别
+
+新增了关于api网关过滤的监控--这个只能监控通过路由的访问，对于直接访问自然监控不到
