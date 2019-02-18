@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: Welcome-To-My-Home
+
+server:
+  port: 80
